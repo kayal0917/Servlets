@@ -82,7 +82,7 @@ public void DeleteEmployee(String name) throws ClassNotFoundException, SQLExcept
 public void UpdateEmployee(String name,String email) throws ClassNotFoundException, SQLException {
     
     Connection connection = democonnection.getConnection();
-    String save="UPDATE Employee SET email=? WHERE name=?";
+    String save="UPDATE demo SET email=? WHERE name=?";
     PreparedStatement prepareStatement = connection.prepareStatement(save);
     prepareStatement.setString(1, email);
     prepareStatement.setString(2, name);
@@ -108,6 +108,7 @@ public void Update() throws ClassNotFoundException, SQLException {
 	// TODO Auto-generated method stub
 	
 }
+
 }
 
 
