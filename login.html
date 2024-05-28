@@ -3,28 +3,35 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style >
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.submit{
+    margin: 0 auto;
+    width: 10%;
+    left: 45%;
+    position: absolute;
+
+}
+</style>
 </head>
 <body>
-<center>
-<h1>LOGIN</h1>           
+<form action="./Servlet1" style="margin: 0 auto; width: 25%;">
+<fieldset>
+<pre>
+Username: <input type="text" name="username">
+Password: <input type="password" name="password">
 
-	<form action="LoginServlet">
-	<label for="email">Email:</label>
-	<br>
-	<input type="email" id="email" name="email"
-		placeholder="Enter Email id" required autofocus>
-	<br>
+<input type="submit" value="Login" class="submit">
 
-	<label for="password">Password:</label>
-	<br>
-	<input type="password" id="password" name="password"
-		placeholder="Enter Password">
-	<br>
-	
-	<input type="submit" value="LOGIN" class="sub"> 
-	</form>
-					<!-- <a href="NewFile.html">Login</a>  -->
-		
-	</center>
+</pre>
+</fieldset>
+
+
+</form>
 </body>
 </html>
